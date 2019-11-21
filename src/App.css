@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size:18px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.ingredient-name {
+  font-size: 24px;
+  padding-right: 15px;
+}
+  
+.ingredient-area { 
+  grid-area: 1 / 1 / 2 / 2; 
+  width: 350px
+}
+
+.burger-area { 
+  grid-area: 1 / 2 / 2 / 3; 
+  width: 350px;
+  position: relative;
+  top: 150px
+}
+
+.clear {
+  text-align: center;
+}
+
+.burger-clear-btn {
+  font-size: 24px;
+  font-weight: bold
+}
+
+.no-style {
+  list-style: none;
+}
